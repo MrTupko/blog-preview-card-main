@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Github page](https://your-live-site-url.com)
+- Live Site URL: [Github page](https://mrtupko.github.io/blog-preview-card-main/)
 
 ## My process
 
