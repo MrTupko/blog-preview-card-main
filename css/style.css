@@ -1,0 +1,144 @@
+
+
+*,*::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+img {
+    max-width: 100%;
+}
+
+body > * {
+    margin-top: 10rem;
+}
+
+:root {
+    --White: white;
+    --Yellow: hsl(47, 88%, 63%);
+    --Gray-500: hsl(0, 0%, 42%);
+    --Gray-950: hsl(0, 0%, 7%);
+
+    --FS: 1rem;
+}
+
+.margin-center {
+    margin-inline: auto;
+}
+
+/*Layout*/
+
+.flex {
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+}
+
+.card {
+    max-width: 350px;
+    padding: 1.3rem;
+}
+
+.card > *+* {
+    margin-top: 1rem;
+}
+
+/*Font*/
+
+.figtree-bold {
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+  }
+
+  .figtree-regular {
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+/*styling*/
+
+.card-art {
+    border-radius: 10px;
+}
+
+.card-topic {
+    max-width: fit-content;
+    font-size: calc(var(--FS) * 0.8);
+    padding: 0.3em 0.7em;
+    border-radius: 5px;
+}
+
+
+.date {
+    font-size: calc(var(--FS) * 0.75);    
+    font-weight: 500;
+}
+
+.post-link {
+    color: var(--Gray-950);
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.post-link:hover {
+    color: var(--Yellow);
+}
+
+.post-link:active {
+    color: var(--Yellow);
+}
+
+.profile-name {
+    font-size: calc(var(--FS) * 0.8);
+}
+
+
+
+
+.bg-accent {
+    background-color: var(--Yellow);
+}
+
+.bg-card {
+   background-color: var(--White); 
+}
+
+.color-regular {
+    color: var(--Gray-500);
+}
+
+
+.box-shadow {
+     border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 8px 8px 0px black;
+}
+
+.attribution {
+    width: 50%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    box-shadow: 0px 1px 5px #333 ;
+    padding: 0.3em;
+}
+
+.attribution a {
+    color: papayawhip;
+    font-weight: 800;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+@media screen and (min-width: 60ch) {
+    .card {
+        line-height: 1.4;
+    }
+}
